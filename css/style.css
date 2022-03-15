@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Serif", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #16394c;
+}
+
+.container {
+  width: 100vw;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1 {
+  color: white;
+  margin-bottom: 0.6rem;
+}
+
+.container form,
+#main {
+  width: 100%;
+}
+
+.container form input {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.25);
+  font-family: inherit;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+}
+
+.container input:focus {
+  outline: none;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.today {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.today img,
+.sub-future img {
+  margin-top: 0.75rem;
+}
+
+.sub-today:last-child {
+  text-align: left;
+}
+
+.sub-today p,
+.sub-future p {
+  margin: 0.25rem 0;
+  font-size: 0.85rem;
+}
+
+.sub-today h1 {
+  margin-bottom: 0.5rem;
+}
+.sub-today h3 {
+  margin-top: 0.75rem;
+}
+
+.future {
+  display: flex;
+}
+
+.future h5 {
+  margin: 0.85rem 0 0.3rem 0;
+}
+
+.sub-future {
+  flex: 1;
+}
+
+.sub-today,
+.sub-future {
+  text-align: center;
+}
+
+.sub-future img {
+  width: 3rem;
+}
+
+.error_message {
+  text-align: center;
+  color: red;
+}
