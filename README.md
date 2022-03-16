@@ -24,5 +24,6 @@ This plugin allows you to send cross-domain requests. You can also override Requ
 
 ## Credits
 
-- [metaweather](https://www.metaweather.com/api/)(Weather data API) -[allOrigins](https://allorigins.win/)(Proxy Server)
+- [metaweather](https://www.metaweather.com/api/)(Weather data API) 
+- [allOrigins](https://allorigins.win/)(Proxy Server)
 - [Commercial Type & Greg Gazdowicz](https://fonts.google.com/specimen/Roboto+Serif?query=roboto+ser)(Fonts)
