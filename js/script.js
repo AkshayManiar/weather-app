@@ -1,3 +1,4 @@
+const PROXYURL = "https://api.allorigins.win/raw?url=";
 const APIURL = "https://www.metaweather.com/api/location/search/?query=";
 const WOEIDURL = "https://www.metaweather.com/api/location/";
 const IMGURL = "https://www.metaweather.com/static/img/weather/png/64/";
@@ -7,7 +8,7 @@ const form = document.getElementById("form");
 const search = document.getElementById("search");
 
 async function getWoeid(city) {
-  const resp = await fetch(APIURL + city);
+  const resp = await fetch(PROXYURL + APIURL + city);
   const respData = await resp.json();
   const cts = JSON.stringify(respData);
   if (5 < cts.length && cts.length < 200) {
@@ -19,7 +20,7 @@ async function getWoeid(city) {
 }
 
 async function getWeather(woeID) {
-  const resp = await fetch(WOEIDURL + woeID + "/");
+  const resp = await fetch(PROXYURL + WOEIDURL + woeID + "/");
   const respData = await resp.json();
   displayWeather(respData);
 }

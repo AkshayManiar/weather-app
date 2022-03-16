@@ -52,6 +52,11 @@ body {
   outline: none;
 }
 
+input::placeholder {
+  color: white;
+  font-weight: normal;
+}
+
 .weather {
   display: flex;
   flex-direction: column;
